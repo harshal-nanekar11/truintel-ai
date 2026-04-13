@@ -66,7 +66,7 @@ This project served as a deep dive into **advanced frontend architecture**, **co
 ### 3. Interactive Results Data Visualizations
 *(Custom-built SVG Gauge, Radar, and Bar charts explaining exactly where the review failed authenticity checks.)*
 
-> **[Watch the full 15-second Demo Video here!](https://github.com/harshal-nanekar11/truintel-ai)**
+
 
 ---
 
