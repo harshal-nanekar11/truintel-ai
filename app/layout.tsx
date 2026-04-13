@@ -1,6 +1,7 @@
 import type { Metadata, Viewport } from "next";
 import "./globals.css";
 import ClientProviders from "@/components/ClientProviders";
+import { Analytics } from "@vercel/analytics/next";
 
 export const metadata: Metadata = {
   title: "TruIntel AI – Fake Review Detector",
@@ -63,6 +64,7 @@ export default function RootLayout({
         />
 
         <ClientProviders>{children}</ClientProviders>
+        <Analytics />
       </body>
     </html>
   );
