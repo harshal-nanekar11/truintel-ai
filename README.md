@@ -11,6 +11,8 @@
 
 > A production-grade AI SaaS platform that detects fake product reviews using advanced NLP heuristics — no paid APIs, fully client-side.
 
+### 🔗 **[Live Demo: truintel-ai.vercel.app](https://truintel-ai.vercel.app)**
+
 ---
 
 ## ✨ Features
@@ -41,7 +43,7 @@
 ## 🚀 Run Locally
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/truintel-ai.git
+git clone https://github.com/harshal-nanekar11/truintel-ai.git
 cd truintel-ai
 npm install
 npm run dev
@@ -59,7 +61,8 @@ Open [http://localhost:3000](http://localhost:3000)
 
 ## 👨‍💻 Designed & Developed by
 
-**Harshal Nanekar**
+**Harshal Nanekar**  
+[LinkedIn](https://www.linkedin.com/in/harshal-nanekar-85b7562b1) | [GitHub](https://github.com/harshal-nanekar11)
 
 ---
 
