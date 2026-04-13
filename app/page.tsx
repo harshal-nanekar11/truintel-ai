@@ -148,7 +148,7 @@ export default function HomePage() {
             </a>
 
             {/* LinkedIn */}
-            <a href="https://linkedin.com/in/harshal-nanekar" target="_blank" rel="noopener noreferrer"
+            <a href="https://www.linkedin.com/in/harshal-nanekar-85b7562b1" target="_blank" rel="noopener noreferrer"
               title="LinkedIn"
               style={{
                 width: "42px", height: "42px", borderRadius: "12px",
@@ -166,7 +166,7 @@ export default function HomePage() {
             </a>
 
             {/* Instagram */}
-            <a href="https://instagram.com/harshal_nanekar" target="_blank" rel="noopener noreferrer"
+            <a href="https://www.instagram.com/_harshal.0011_?igsh=MWp1cng4MHc1dHBlYQ==" target="_blank" rel="noopener noreferrer"
               title="Instagram"
               style={{
                 width: "42px", height: "42px", borderRadius: "12px",
@@ -184,7 +184,7 @@ export default function HomePage() {
             </a>
 
             {/* Gmail */}
-            <a href="mailto:harshal.nanekar@gmail.com"
+            <a href="mailto:harshalnanekar69@gmail.com"
               title="Email"
               style={{
                 width: "42px", height: "42px", borderRadius: "12px",
