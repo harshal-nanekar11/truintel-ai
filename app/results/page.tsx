@@ -45,7 +45,7 @@ function ScoreBar({
 function SentimentGauge({ score }: { score: number }) {
   // score: -100 to +100, center 0
   const normalized = Math.min(Math.max((score + 100) / 200, 0), 1); // 0..1
-  const angleDeg = -180 + normalized * 180; // -180..0 (left=neg, right=pos)
+  const angleDeg = -90 + normalized * 180; // -90..+90 (left=neg, right=pos)
   const color = score > 20 ? "#10b981" : score < -20 ? "#f43f5e" : "#f59e0b";
   const label = score > 20 ? "Positive" : score < -20 ? "Negative" : "Neutral";
 
@@ -64,10 +64,10 @@ function SentimentGauge({ score }: { score: number }) {
           stroke={color}
           strokeWidth="2.5"
           strokeLinecap="round"
-          initial={{ rotate: -90, originX: "90px", originY: "92px" }}
-          animate={{ rotate: angleDeg, originX: "90px", originY: "92px" }}
+          initial={{ rotate: -90 }}
+          animate={{ rotate: angleDeg }}
           transition={{ type: "spring", stiffness: 80, damping: 18, delay: 0.4 }}
-          style={{ transformOrigin: "90px 92px" }}
+          style={{ originX: 0.5, originY: 1 }}
         />
         <circle cx="90" cy="92" r="6" fill={color} />
         <circle cx="90" cy="92" r="3" fill="white" />
