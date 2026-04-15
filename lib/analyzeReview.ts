@@ -110,8 +110,28 @@ export function analyzeReview(review: string): AnalysisResult {
     });
   }
 
+  // ── Gibberish / Keyboard Smash check ──────────────────────────────────────
+  const longestWord = text.split(/\s+/).reduce((max, w) => Math.max(max, w.length), 0);
+  if (longestWord > 20 && !text.includes("http")) {
+    fakeScore += 60;
+    explanations.push({
+      category: "Suspicious Word Length",
+      description: `Detected a continuous string of ${longestWord} characters without spaces, which usually indicates pasted gibberish.`,
+      icon: "⌨️",
+      impact: "negative",
+    });
+  }
+
   // ── 3. Review length analysis ────────────────────────────────────────────
-  if (wordCount < 15) {
+  if (wordCount < 3) {
+    fakeScore += 75;
+    explanations.push({
+      category: "Meaningless Review",
+      description: `Review is only ${wordCount} word(s). Authentic reviews require actual product context.`,
+      icon: "🚫",
+      impact: "negative",
+    });
+  } else if (wordCount < 15) {
     fakeScore += 20;
     explanations.push({
       category: "Extremely Short Review",
